@@ -1,4 +1,4 @@
-# Melody - Something I hold, I dare to.
+# Melody - Something I hold dear.
 
 ## Content Lists
 - [URL](#url)

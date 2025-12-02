@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <title>Melody</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- PWA meta -->
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
 <div class="player">
@@ -40,16 +51,21 @@
     <div id="player"></div>
 </div>
 
-<!--test-->
-
 <!-- YouTube iframe API script -->
 <script src="https://www.youtube.com/iframe_api"></script>
-<!-- Tracks data -->
-<!--<script src="tracks.js"></script>-->
-<!--<script src="assets/music-list/tracks.js"></script>-->
-<!-- Your player script -->
-<!--<script src="player.js"></script>-->
+<!-- Player script -->
 <script src="assets/js/player.js"></script>
+
+<!-- Register Service Worker for PWA -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('Service Worker registered.', reg))
+                .catch(err => console.log('Service Worker registration failed:', err));
+        });
+    }
+</script>
 
 </body>
 </html>
