@@ -6,6 +6,7 @@ let progressInterval;
 let tracks = [];
 
 const SHEETDB_API_URL = 'https://sheetdb.io/api/v1/uvpm2f3oq7b9g';
+// const SHEETDB_API_URL = './assets/song-list/playlist.json';
 
 const circle = document.querySelector('circle');
 const radius = 100;
