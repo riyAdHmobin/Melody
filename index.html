@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
     <title>Melody</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<h1>Welcome To My Melody</h1>
+<div class="player">
+    <div class="album-art-wrapper">
+        <svg class="progress-ring" width="200" height="200">
+            <circle r="100" cx="100" cy="100"></circle>
+        </svg>
+        <img class="album-art" id="albumArt" src="" alt="Album Art" />
+    </div>
+    <div class="info">
+        <div class="title" id="title">Loading...</div>
+        <div class="artist" id="artist">...</div>
+        <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
+    </div>
+    <div class="controls">
+        <div class="btn" onclick="prevTrack()">
+            <i class="fa fa-backward"></i>
+        </div>
+        <div class="btn play-btn" id="playPauseBtn" onclick="togglePlay()">
+            <i id="playPauseIcon" class="fa fa-play"></i>
+        </div>
+        <div class="btn" onclick="nextTrack()">
+            <i class="fa fa-forward"></i>
+        </div>
+    </div>
+
+    <div class="playlist">
+        <h3>Playlist</h3>
+        <div id="trackList"></div>
+    </div>
+
+    <div id="player"></div>
+</div>
+
+<!--test-->
+
+<!-- YouTube iframe API script -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<!-- Tracks data -->
+<!--<script src="tracks.js"></script>-->
+<!--<script src="assets/music-list/tracks.js"></script>-->
+<!-- Your player script -->
+<!--<script src="player.js"></script>-->
+<script src="assets/js/player.js"></script>
+
 </body>
 </html>
