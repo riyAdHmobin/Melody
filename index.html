@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<div class="player">
+
+<!-- Splash Screen -->
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <i class="fas fa-music splash-icon"></i>
+        <h1>Melody</h1>
+        <p>Something I Hold Dear,</p>
+        <button class="splash-btn" onclick="closeSplash()">Enter</button>
+    </div>
+</div>
+
+<!-- Main Player -->
+<div class="player" id="playerContainer">
     <div class="album-art-wrapper">
         <svg class="progress-ring" width="200" height="200">
             <circle r="100" cx="100" cy="100"></circle>
@@ -49,16 +61,9 @@
     <div id="player"></div>
 </div>
 
-<!--test-->
-
-<!-- YouTube iframe API script -->
 <script src="https://www.youtube.com/iframe_api"></script>
-<!-- Tracks data -->
-<!--<script src="tracks.js"></script>-->
-<!--<script src="assets/music-list/tracks.js"></script>-->
-<!-- Your player script -->
-<!--<script src="player.js"></script>-->
 <script src="assets/js/player.js"></script>
+<script src="assets/js/splash.js"></script>
 
 </body>
 </html>
