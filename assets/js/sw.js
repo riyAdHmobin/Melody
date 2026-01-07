@@ -1,11 +1,11 @@
 const CACHE_NAME = 'melody-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/assets/css/style.css',
-    '/assets/js/script.js',
-    '/assets/js/music-data.js',
-    '/favicon.svg'
+    '/Melody/',
+    '/Melody/index.html',
+    '/Melody/assets/css/style.css',
+    '/Melody/assets/js/script.js',
+    '/Melody/assets/js/music-data.js',
+    '/Melody/favicon.svg'
 ];
 
 self.addEventListener('install', event => {
