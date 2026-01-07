@@ -1,5 +1,10 @@
 'use strict';
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./assets/js/sw.js');
+}
+
+
 /**
  * add eventListnere on all elements that are passed
  */
