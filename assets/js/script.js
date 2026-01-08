@@ -35,6 +35,8 @@ for (let i = 0, len = musicData.length; i < len; i++) {
       <div class="item-icon">
         <span class="material-symbols-rounded">equalizer</span>
       </div>
+      
+      <span class="music-title">${musicData[i].title}</span>
     </button>
   </li>
   `;

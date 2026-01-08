@@ -681,3 +681,32 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   .music-list { gap: 28px; }
 
 }
+
+/*Adding Starts Here*/
+
+.logo-icon {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.music-item {
+  position: relative;
+}
+
+.music-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*white-space: nowrap;*/
+}
