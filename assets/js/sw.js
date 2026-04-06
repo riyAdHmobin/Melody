@@ -5,6 +5,8 @@ const urlsToCache = [
     '/Melody/assets/css/style.css',
     '/Melody/assets/js/script.js',
     '/Melody/assets/js/music-data.js',
+    '/Melody/assets/js/player.js',
+    '/Melody/assets/song-list/playlist.json',
     '/Melody/favicon.svg'
 ];
 
