@@ -690,6 +690,12 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   object-fit: contain;
 }
 
+.yt-icon {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
 .music-item {
   position: relative;
 }
